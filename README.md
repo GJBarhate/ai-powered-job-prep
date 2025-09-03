@@ -19,33 +19,27 @@ AI-powered platform for interview preparation, resume review, and technical ques
 
 ---
 
-## Technologies & Usage
+## Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **Next.js** | Fullstack React framework for building the app |
-| **TypeScript** | Type safety and better development experience |
-| **Clerk** | User authentication, sign-in, sign-up, and user management |
-| **PostgreSQL** | Database for storing users, jobs, interviews, questions, and resumes |
-| **Arcjet** | Rate limiting and security for API endpoints |
-| **Hume AI** | Voice and emotion analysis for interview feedback |
-| **Google Gemini** | AI LLM for question and resume feedback generation |
-| **Shadcn/UI** | Modern UI components and theming |
-| **Vercel** | Deployment of the Next.js application |
+- **Frontend**: Next.js, React, TypeScript, Shadcn/UI  
+- **Backend / API**: Node.js, Express.js, Clerk (Auth), Arcjet (Rate limiting)  
+- **Database**: PostgreSQL  
+- **AI / ML**: Google Gemini LLM, Hume AI (Voice/Emotion analysis)  
+- **Deployment**: Vercel  
 
----
 
-## Getting Started
+## 🚀 Getting Started
 
-# Install Dependencies
-npm install
-# or
-yarn install
-# or
-pnpm install
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-# Configure Environment Variables (create .env in root)
-echo "# =========================
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/GJBarhate/ai-powered-job-prep.git
+cd ai-resume-builder
+```
+
+### 2️⃣ Create Environment Files  
 # PostgreSQL Database
 DB_HOST=hostname
 DB_PORT=5432
@@ -54,7 +48,6 @@ DB_PASSWORD=password
 DB_NAME=ai-job-prep
 DATABASE_URL=postgres://postgres:password@hostname:5432/ai-job-prep
 
-# =========================
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/app
@@ -63,33 +56,19 @@ NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
 CLERK_SECRET_KEY=your_secret_key
 CLERK_WEBHOOK_SECRET=your_webhook_secret
 
-# =========================
 # Arcjet (Security)
 ARCJET_KEY=your_arcjet_key
 
-# =========================
 # Hume AI (Voice/Emotion)
 HUME_API_KEY=your_hume_api_key
 HUME_SECRET_KEY=your_hume_secret_key
 NEXT_PUBLIC_HUME_CONFIG_ID=your_hume_config_id
 
-# =========================
 # Google Gemini (LLM)
 GEMINI_API_KEY=your_gemini_api_key" > .env
 
-# Run Database Studio
-npm run db:studio
-
-# Run Development Server
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 3️⃣ Install Dependencies
+npm install
 
 # Open Browser
-xdg-open http://localhost:3000  # Linux
-# open http://localhost:3000    # macOS
 # start http://localhost:3000   # Windows
