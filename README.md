@@ -37,29 +37,22 @@ AI-powered platform for interview preparation, resume review, and technical ques
 
 ## Getting Started
 
-1. **Install Dependencies**
-
-```bash
+# Install Dependencies
 npm install
 # or
 yarn install
 # or
 pnpm install
 
-
-2. **Configure Environment Variables**
-
-Create a `.env` file in the root of the project with the following structure:
-
-```env
-# =========================
+# Configure Environment Variables (create .env in root)
+echo "# =========================
 # PostgreSQL Database
-DB_HOST=localhost
+DB_HOST=hostname
 DB_PORT=5432
 DB_USER=postgres
 DB_PASSWORD=password
 DB_NAME=ai-job-prep
-DATABASE_URL=postgres://postgres:password@localhost:5432/ai-job-prep
+DATABASE_URL=postgres://postgres:password@hostname:5432/ai-job-prep
 
 # =========================
 # Clerk Authentication
@@ -82,21 +75,12 @@ NEXT_PUBLIC_HUME_CONFIG_ID=your_hume_config_id
 
 # =========================
 # Google Gemini (LLM)
-GEMINI_API_KEY=your_gemini_api_key
+GEMINI_API_KEY=your_gemini_api_key" > .env
 
-
-### 3. Run Database Studio
-
-Run the following command to open a UI and inspect your PostgreSQL database tables:
-
-```bash
+# Run Database Studio
 npm run db:studio
 
-4. **Run Development Server**
-
-Run one of the following commands to start the development server:
-
-```bash
+# Run Development Server
 npm run dev
 # or
 yarn dev
@@ -104,6 +88,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
- 
 
- Open http://localhost:3000  in your browser to see the app.
+# Open Browser
+xdg-open http://localhost:3000  # Linux
+# open http://localhost:3000    # macOS
+# start http://localhost:3000   # Windows
