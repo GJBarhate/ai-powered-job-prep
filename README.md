@@ -42,12 +42,12 @@ cd ai-resume-builder
 ### 2️⃣ Create Environment Files  
 ```bash
 # PostgreSQL Database
-DB_HOST=hostname
-DB_PORT=5432
-DB_USER=postgres
-DB_PASSWORD=password
-DB_NAME=ai-job-prep
-DATABASE_URL=postgres://postgres:password@hostname:5432/ai-job-prep
+DB_HOST=your_db_host       # e.g., localhost or your server IP
+DB_PORT=5432               # default PostgreSQL port
+DB_USER=your_db_user       # e.g., postgres
+DB_PASSWORD=your_db_password
+DB_NAME=your_db_name       # e.g., ai_job_prep
+DATABASE_URL=postgres://your_db_user:your_db_password@your_db_host:5432/your_db_name
 
 # Clerk Authentication
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
