@@ -40,6 +40,7 @@ cd ai-resume-builder
 ```
 
 ### 2️⃣ Create Environment Files  
+```bash
 # PostgreSQL Database
 DB_HOST=hostname
 DB_PORT=5432
@@ -65,10 +66,12 @@ HUME_SECRET_KEY=your_hume_secret_key
 NEXT_PUBLIC_HUME_CONFIG_ID=your_hume_config_id
 
 # Google Gemini (LLM)
-GEMINI_API_KEY=your_gemini_api_key" > .env
+GEMINI_API_KEY=your_gemini_api_key" 
+```
 
 ### 3️⃣ Install Dependencies
-npm install
+```bash
+    cd ai-powered-job-prep/
+    npm install
+    ```
 
-# Open Browser
-# start http://localhost:3000   # Windows
