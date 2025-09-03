@@ -1,0 +1,1 @@
+ALTER TABLE "interviews" ALTER COLUMN "feedback" SET DATA TYPE text;
