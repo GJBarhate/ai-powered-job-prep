@@ -69,9 +69,29 @@ NEXT_PUBLIC_HUME_CONFIG_ID=your_hume_config_id
 GEMINI_API_KEY=your_gemini_api_key" 
 ```
 
-### 3️⃣ Install Dependencies
-```bash
-    cd ai-powered-job-prep/
-    npm install
-    ```
 
+### 3️⃣ Install & Run
+
+```bash
+# Go inside the project folder
+cd ai-powered-job-prep/
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+   ```
+
+### 4️⃣ Setup Database
+
+```bash
+# Start PostgreSQL with Docker
+docker compose up
+
+# Push schema to the database
+npm run db:push
+
+# Open database studio (Drizzle Studio)
+npm run db:studio
+   ```
